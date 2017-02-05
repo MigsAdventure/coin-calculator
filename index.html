@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Coin Calculator</title>
+</head>
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Enter Coin Value</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input type="number" id="newCoinInput">
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="saveBtn" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>Coin Calculator</h1>
+
+  <!-- Coins -->
+  <input type="button" value="25" class="coin" name="coin1" data-toggle="modal" data-target="#myModal">
+  <h5 class="coinCount" id="quarters"></h5>
+  <input type="button" value="10" class="coin" data-toggle="modal" data-target="#myModal">
+  <h5 class="coinCount" id="dimes"></h5>
+  <input type="button" value="5" class="coin" data-toggle="modal" data-target="#myModal">
+  <h5 class="coinCount" id="nickels"></h5>
+  <input type="button" value="1" class="coin">
+  <h5 class="coinCount" id="pennies"></h5>
+
+  <!-- Calculate Input -->
+  <input type="text" id='userInput'>
+  <button id="calcBtn">Calculate</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

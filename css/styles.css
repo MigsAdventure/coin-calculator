@@ -1,0 +1,15 @@
+.coin {
+  background: gray;
+  font-size: 2em;
+  padding:1em;
+  border-radius: 100%;
+}
+
+.coinCount {
+  background:black;
+  color: ghostwhite;
+  font-size:1em;
+  border-radius: 100%;
+  padding:5px;
+  display: inline-block; 
+}
