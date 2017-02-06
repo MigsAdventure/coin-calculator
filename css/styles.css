@@ -52,10 +52,12 @@ body, html , #mainContainer{
 .coinCount {
   position: absolute;
   right:0;
-  top:1em;
+  top:0;
   background:black;
   color: ghostwhite;
   font-size:1em;
+  height: 2em;
+  width: 2em;
   border-radius: 100%;
   padding:5px;
   display: inline-block;
