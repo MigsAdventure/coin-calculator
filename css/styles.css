@@ -1,15 +1,84 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin:auto;
+  text-align: center;
+}
+
+#title {
+  margin:1em;
+  font-family:sans-serif;
+}
+
+.row {
+  margin: auto !important ;
+}
+
 .coin {
-  background: gray;
-  font-size: 2em;
+  background: #D8D8D8;
+  font-size: 230%;
   padding:1em;
   border-radius: 100%;
+  min-width: 3.5em;
+  border: none;
+  color:#a3a3a3;
+}
+
+.coinBox {
+  display: inline-block;
+  max-width: 12em;
+  width: 45%;
+  margin: 5% auto;
+}
+
+.innerCoinBox {
+  position: relative;
+  display: inline-block;
 }
 
 .coinCount {
+  position: absolute;
+  right:0;
+  top:1em;
   background:black;
   color: ghostwhite;
   font-size:1em;
   border-radius: 100%;
   padding:5px;
-  display: inline-block; 
+  display: inline-block;
+}
+
+.userInputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 22em;
+  justify-content: space-around;;
+  margin:auto;
+  height: 20%;
+}
+
+#userInput {
+  text-align: right;
+  border: 1px solid lightgrey;
+  padding:0.7em;
+  line-height: 1.2em;
+}
+
+#calcBtn {
+  background: black;
+  color:ghostwhite;
+  border:none;
+  padding:1em;
+}
+
+@media screen and (min-width:400px) and (min-height: 600px) {
+  .userInputContainer {
+    margin: 3em auto;
+  }
+
+  #userInput {
+    padding:1em;
+    margin-bottom:2em;
+  }
 }

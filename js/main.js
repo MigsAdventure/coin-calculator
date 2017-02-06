@@ -51,7 +51,7 @@ calcBtn.onclick = function() {
     coinValuesArr.push(coin[key].value);
   };
   coinValuesArr.sort((a,b) => b-a);
-
+  
   coinValues = {
     coin1: 0,
     coin2: 0,

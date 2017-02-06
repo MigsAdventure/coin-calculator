@@ -35,21 +35,41 @@
     </div>
   </div>
 
-  <h1>Coin Calculator</h1>
+  <h2 id="title">Coin Calculator</h2>
 
   <!-- Coins -->
-  <input type="button" value="25" class="coin" name="coin1" data-toggle="modal" data-target="#myModal">
-  <h5 class="coinCount" id="coin1"></h5>
-  <input type="button" value="10" class="coin" data-toggle="modal" data-target="#myModal">
-  <h5 class="coinCount" id="coin2"></h5>
-  <input type="button" value="5" class="coin" data-toggle="modal" data-target="#myModal">
-  <h5 class="coinCount" id="coin3"></h5>
-  <input type="button" value="1" class="coin">
-  <h5 class="coinCount" id="coin4"></h5>
+  <div class="coinsContainer">
+      <div class="coinBox">
+        <div class="innerCoinBox">
+          <input type="button" value="25" class="coin" name="coin1" data-toggle="modal" data-target="#myModal">
+          <h5 class="coinCount" id="coin1"></h5>
+        </div>
+      </div>
+      <div class="coinBox">
+        <div class="innerCoinBox">
+          <input type="button" value="10" class="coin" data-toggle="modal" data-target="#myModal">
+          <h5 class="coinCount" id="coin2"></h5>
+        </div>
+      </div>
+      <div class="coinBox">
+        <div class="innerCoinBox">
+          <input type="button" value="5" class="coin" data-toggle="modal" data-target="#myModal">
+          <h5 class="coinCount" id="coin3"></h5>
+        </div>
+      </div>
+      <div class="coinBox">
+        <div class="innerCoinBox">
+          <input type="button" value="1" class="coin">
+          <h5 class="coinCount" id="coin4"></h5>
+        </div>
+      </div>
+  </div>
 
   <!-- Calculate Input -->
-  <input type="number" id='userInput'>
-  <button id="calcBtn">Calculate</button>
+  <div class="userInputContainer">
+    <input type="number" id='userInput'>
+    <button id="calcBtn">CALCULATE</button>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
