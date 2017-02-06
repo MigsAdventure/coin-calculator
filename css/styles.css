@@ -46,9 +46,10 @@ body, html {
   border-radius: 100%;
   padding:5px;
   display: inline-block;
+  visibility: hidden;
 }
 
-.userInputContainer {
+#userInputContainer {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -73,7 +74,7 @@ body, html {
 }
 
 @media screen and (min-width:400px) and (min-height: 600px) {
-  .userInputContainer {
+  #userInputContainer {
     margin: 3em auto;
   }
 

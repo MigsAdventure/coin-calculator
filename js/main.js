@@ -35,10 +35,12 @@ function findCurrCoinCount(coinValues) {
   for(var i = 0; i < 4; i++) {
     let currCoinCount = coinCount[i];
     currCoinCount.innerHTML = '';
+    currCoinCount.style.visibility = "hidden";
     for (var key in coinValues) {
       // key must match current coin and must have a value in matching key.
       if (key === coinCount[i].id && coinValues[key]) {
         currCoinCount.innerHTML = coinValues[key];
+        currCoinCount.style.visibility = "visible";
       };
     };
   };
@@ -51,7 +53,7 @@ calcBtn.onclick = function() {
     coinValuesArr.push(coin[key].value);
   };
   coinValuesArr.sort((a,b) => b-a);
-  
+
   coinValues = {
     coin1: 0,
     coin2: 0,
