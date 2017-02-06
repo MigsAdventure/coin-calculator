@@ -13,32 +13,34 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div id="mainContainer">
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Enter Coin Value</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <input type="number" id="newCoinInput">
-        </div>
-        <div class="modal-footer">
-          <button type="button" id="saveBtn" class="btn btn-primary" data-dismiss="modal">Save changes</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Enter Coin Value</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input type="number" id="newCoinInput">
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="saveBtn" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <h2 id="title">Coin Calculator</h2>
+    <h2 id="title">Coin Calculator</h2>
 
-  <!-- Coins -->
-  <div id="coinsContainer">
+    <!-- Coins -->
+    <div id="coinsContainer">
       <div class="coinBox">
         <div class="innerCoinBox">
           <input type="button" value="25" class="coin" name="coin1" data-toggle="modal" data-target="#myModal">
@@ -63,12 +65,13 @@
           <h5 class="coinCount" id="coin4"></h5>
         </div>
       </div>
-  </div>
+    </div>
 
-  <!-- Calculate Input -->
-  <div id="userInputContainer">
-    <input type="number" id='userInput'>
-    <button id="calcBtn">CALCULATE</button>
+    <!-- Calculate Input -->
+    <div id="userInputContainer">
+      <input type="number" id='userInput' min=0>
+      <button id="calcBtn">CALCULATE</button>
+    </div>
   </div>
 
   <script src="js/main.js"></script>
